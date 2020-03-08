@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallengeMode">
+
+    <ImageView
+        android:id="@+id/curruserimg"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="359dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/newchall_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="Get New Challenges"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Weekly Challenges"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:text="Challenge Mode"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/curruserimg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Daily Challenges"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="418dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="91dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall1"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 1" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall2"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 2" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall3"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 3" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall4"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 4" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall5"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 5" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall6"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 6" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall7"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 7" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall8"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 8" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall9"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 9" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdr_dchall0"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Challenge 10" />
+
+                <CheckBox
+                    android:id="@+id/cb_dcomplete0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="418dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginBottom="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall1"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 1" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall2"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 2" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall3"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 3" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall4"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 4" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall5"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 5" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall6"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 6" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall7"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 7" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall8"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 8" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall9"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 9" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdr_wchall0"
+                        android:layout_width="381dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Challenge 10" />
+
+                    <CheckBox
+                        android:id="@+id/cb_wcomplete0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
